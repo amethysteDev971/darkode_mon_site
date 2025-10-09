@@ -1,25 +1,74 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(120deg, #a0c4ff, #bdb2ff);
+  background-color: #eae2b7;
   color: #222;
 }
 
 header {
-  background-color: #0c9da3;
+  background-color: #3a0ca3;
   color: white;
   text-align: center;
   padding: 2rem 0;
 }
 
-main {
-  max-width: 800px;
+h1{
+  font-size: 45px;
+}
+
+#header h2{
+  font-weight: 200;
+}
+
+#header {
+display: flex;
+background-color: white;
+height: 500px;
+}
+
+button{
+  padding: 15px 30px;
+  background-color: #f77f00;
+  border-color: #f77f00;
+  border-radius: 5%;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+button:hover{
+  background-color: #fcbf49 ;
+  transform: scale(1.05);    /* Légère augmentation */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#bloc-gauche{
+width: 50%;
+padding: 40px;
+justify-content: center;
+height: 100%;
+
+}
+
+
+#bloc-droite {
+  width: 50%;
+  background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4');
+  background-size: cover;
+  height: 500px;
+}
+
+#passion, #presentation {
+  
+  max-width: 900px;
   margin: 2rem auto;
   background: white;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 footer {
   text-align: center;
@@ -46,10 +95,12 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  color: #f77f00;
 }
 
 nav a.active {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #f77f00;
+  color: #f77f00;
 }
 
 /* --- Section projets --- */
